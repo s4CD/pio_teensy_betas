@@ -549,9 +549,9 @@
 
 #elif defined(__IMXRT1062__) && defined(ARDUINO_TEENSY41)
 
-#define CORE_NUM_TOTAL_PINS	55
-#define CORE_NUM_DIGITAL	55
-#define CORE_NUM_INTERRUPT	55
+#define CORE_NUM_TOTAL_PINS	61
+#define CORE_NUM_DIGITAL	61
+#define CORE_NUM_INTERRUPT	61
 #define CORE_NUM_ANALOG		18
 #define CORE_NUM_PWM		31
 
@@ -1991,6 +1991,18 @@ static inline void digitalWriteFast(uint8_t pin, uint8_t val)
 				CORE_PIN53_PORTSET = CORE_PIN53_BITMASK;
 			} else if (pin == 54) {
 				CORE_PIN54_PORTSET = CORE_PIN54_BITMASK;
+			} else if (pin == 55) {
+				CORE_PIN55_PORTSET = CORE_PIN54_BITMASK;
+			} else if (pin == 56) {
+				CORE_PIN56_PORTSET = CORE_PIN54_BITMASK;
+			} else if (pin == 57) {
+				CORE_PIN57_PORTSET = CORE_PIN54_BITMASK;
+			} else if (pin == 58) {
+				CORE_PIN58_PORTSET = CORE_PIN54_BITMASK;
+			} else if (pin == 59) {
+				CORE_PIN59_PORTSET = CORE_PIN54_BITMASK;
+			} else if (pin == 60) {
+				CORE_PIN60_PORTSET = CORE_PIN54_BITMASK;
 #endif
 			}
 		} else {
@@ -2107,6 +2119,18 @@ static inline void digitalWriteFast(uint8_t pin, uint8_t val)
 				CORE_PIN53_PORTCLEAR = CORE_PIN53_BITMASK;
 			} else if (pin == 54) {
 				CORE_PIN54_PORTCLEAR = CORE_PIN54_BITMASK;
+			} else if (pin == 55) {
+				CORE_PIN55_PORTCLEAR = CORE_PIN55_BITMASK;
+			} else if (pin == 56) {
+				CORE_PIN56_PORTCLEAR = CORE_PIN56_BITMASK;
+			} else if (pin == 57) {
+				CORE_PIN57_PORTCLEAR = CORE_PIN57_BITMASK;
+			} else if (pin == 58) {
+				CORE_PIN58_PORTCLEAR = CORE_PIN58_BITMASK;
+			} else if (pin == 59) {
+				CORE_PIN59_PORTCLEAR = CORE_PIN59_BITMASK;
+			} else if (pin == 60) {
+				CORE_PIN60_PORTCLEAR = CORE_PIN60_BITMASK;
 #endif
 			}
 		}
@@ -2241,6 +2265,18 @@ static inline uint8_t digitalReadFast(uint8_t pin)
 			return (CORE_PIN53_PINREG & CORE_PIN53_BITMASK) ? 1 : 0;
 		} else if (pin == 54) {
 			return (CORE_PIN54_PINREG & CORE_PIN54_BITMASK) ? 1 : 0;
+		} else if (pin == 55) {
+			return (CORE_PIN55_PINREG & CORE_PIN55_BITMASK) ? 1 : 0;
+		} else if (pin == 56) {
+			return (CORE_PIN56_PINREG & CORE_PIN56_BITMASK) ? 1 : 0;
+		} else if (pin == 57) {
+			return (CORE_PIN57_PINREG & CORE_PIN57_BITMASK) ? 1 : 0;
+		} else if (pin == 58) {
+			return (CORE_PIN58_PINREG & CORE_PIN58_BITMASK) ? 1 : 0;
+		} else if (pin == 59) {
+			return (CORE_PIN59_PINREG & CORE_PIN59_BITMASK) ? 1 : 0;
+		} else if (pin == 60) {
+			return (CORE_PIN60_PINREG & CORE_PIN60_BITMASK) ? 1 : 0;
 #endif
 		} else {
 			return 0;
@@ -2377,6 +2413,18 @@ static inline void digitalToggleFast(uint8_t pin)
 			CORE_PIN53_PORTTOGGLE = CORE_PIN53_BITMASK;
 		} else if (pin == 54) {
 			CORE_PIN54_PORTTOGGLE = CORE_PIN54_BITMASK;
+		} else if (pin == 55) {
+			CORE_PIN55_PORTTOGGLE = CORE_PIN55_BITMASK;
+		} else if (pin == 56) {
+			CORE_PIN56_PORTTOGGLE = CORE_PIN56_BITMASK;
+		} else if (pin == 57) {
+			CORE_PIN57_PORTTOGGLE = CORE_PIN57_BITMASK;
+		} else if (pin == 58) {
+			CORE_PIN58_PORTTOGGLE = CORE_PIN58_BITMASK;
+		} else if (pin == 59) {
+			CORE_PIN59_PORTTOGGLE = CORE_PIN59_BITMASK;
+		} else if (pin == 60) {
+			CORE_PIN60_PORTTOGGLE = CORE_PIN60_BITMASK;
 #endif
 		}
 	} else if (pin < CORE_NUM_DIGITAL) {
