@@ -553,7 +553,7 @@
 #define CORE_NUM_DIGITAL	61
 #define CORE_NUM_INTERRUPT	61
 #define CORE_NUM_ANALOG		18
-#define CORE_NUM_PWM		31
+#define CORE_NUM_PWM		36
 
 #define CORE_PIN0_BIT		3
 #define CORE_PIN1_BIT		2
