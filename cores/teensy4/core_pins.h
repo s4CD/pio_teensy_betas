@@ -1284,6 +1284,12 @@
 #define CORE_INT52_PIN		52
 #define CORE_INT53_PIN		53
 #define CORE_INT54_PIN		54
+#define CORE_INT55_PIN		55
+#define CORE_INT56_PIN		56
+#define CORE_INT57_PIN		57
+#define CORE_INT58_PIN		58
+#define CORE_INT59_PIN		59
+#define CORE_INT60_PIN		60
 #define CORE_INT_EVERY_PIN	1
 
 
@@ -1992,17 +1998,17 @@ static inline void digitalWriteFast(uint8_t pin, uint8_t val)
 			} else if (pin == 54) {
 				CORE_PIN54_PORTSET = CORE_PIN54_BITMASK;
 			} else if (pin == 55) {
-				CORE_PIN55_PORTSET = CORE_PIN54_BITMASK;
+				CORE_PIN55_PORTSET = CORE_PIN55_BITMASK;
 			} else if (pin == 56) {
-				CORE_PIN56_PORTSET = CORE_PIN54_BITMASK;
+				CORE_PIN56_PORTSET = CORE_PIN56_BITMASK;
 			} else if (pin == 57) {
-				CORE_PIN57_PORTSET = CORE_PIN54_BITMASK;
+				CORE_PIN57_PORTSET = CORE_PIN57_BITMASK;
 			} else if (pin == 58) {
-				CORE_PIN58_PORTSET = CORE_PIN54_BITMASK;
+				CORE_PIN58_PORTSET = CORE_PIN58_BITMASK;
 			} else if (pin == 59) {
-				CORE_PIN59_PORTSET = CORE_PIN54_BITMASK;
+				CORE_PIN59_PORTSET = CORE_PIN59_BITMASK;
 			} else if (pin == 60) {
-				CORE_PIN60_PORTSET = CORE_PIN54_BITMASK;
+				CORE_PIN60_PORTSET = CORE_PIN60_BITMASK;
 #endif
 			}
 		} else {
