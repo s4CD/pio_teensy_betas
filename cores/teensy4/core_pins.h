@@ -562,9 +562,9 @@
 	#define CORE_PIN58_BIT		12
 	#define CORE_PIN59_BIT		14
 	#define CORE_PIN60_BIT		9
-	#define CORE_PIN61_BIT		38
+	#define CORE_PIN61_BIT		3
 	#define CORE_PIN62_BIT		0
-	#define CORE_PIN63_BIT		35
+	#define CORE_PIN63_BIT		21
 	#define CORE_PIN64_BIT		10
 	#define CORE_PIN65_BIT		12
 	
