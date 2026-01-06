@@ -81,15 +81,15 @@ const struct pwm_pin_info_struct pwm_pin_info[] = {
 	{0, M(1, 0), 0, 0},  // duplicate FlexPWM1_1_B
 	{0, M(1, 0), 0, 0},  // duplicate FlexPWM1_1_A
 	{1, M(3, 0), 1, 1},  // FlexPWM3_0_A  54  // EMC_29
-#endif
-#ifdef ARDUINO_CCG2
-	{0, M(1, 0), 0, 0},  // N/A			  55  // AD_B0_14
-  	{1, M(3, 2), 2, 0},  // FLEXPWM3_2_B  56  // EMC_34
-  	{1, M(3, 2), 1, 2},  // FLEXPWM3_2_A  57  // EMC_33
-  	{1, M(3, 3), 1, 2},  // FLEXPWM3_3_A  58  // EMC_21
-  	{0, M(1, 0), 0, 0},  // N/A           59  // EMC_14
-  	{1, M(2, 1), 2, 1},  // FLEXPWM2_1_B  60  // B0_09
-	{1, M(4, 1), 2, 1},  // FLEXPWM4_1_B  61  // EMC_03
+	#ifdef ARDUINO_CCG2
+		{0, M(1, 0), 0, 0},  // N/A			  55  // AD_B0_14
+		{1, M(3, 2), 2, 1},  // FLEXPWM3_2_B  56  // EMC_34 ALT1
+		{1, M(3, 2), 1, 1},  // FLEXPWM3_2_A  57  // EMC_33 ALT1
+		{1, M(3, 3), 1, 1},  // FLEXPWM3_3_A  58  // EMC_21 ALT1
+		{0, M(1, 0), 0, 0},  // N/A           59  // EMC_14
+		{1, M(2, 1), 2, 2},  // FLEXPWM2_1_B  60  // B0_09  ALT2
+		{1, M(4, 1), 2, 1},  // FLEXPWM4_1_B  61  // EMC_03 ALT1
+	#endif
 #endif
 #ifdef ARDUINO_TEENSY_MICROMOD
 	{1, M(1, 1), 2, 1},  // FlexPWM1_1_B  34  // SD_B0_03
